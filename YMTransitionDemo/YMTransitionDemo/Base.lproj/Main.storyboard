@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fnP-fX-jZq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XcG-TT-lUe"/>
+                        <viewControllerLayoutGuide type="bottom" id="EUh-aA-FUn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jT1-kL-y4H">
+                                <rect key="frame" x="68" y="108" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PushButton"/>
+                                <connections>
+                                    <action selector="event_push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZ0-ne-Qmq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH4-2p-u27">
+                                <rect key="frame" x="68" y="271" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpX-r8-Y2F">
+                                <rect key="frame" x="68" y="191" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Swipe"/>
+                                <connections>
+                                    <action selector="event_modal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2v-Lf-mQg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lqh-aw-6jq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zK8-G1-1Xi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnP-fX-jZq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f1g-Fb-4fV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J0q-T4-HUX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Gh-C5-Hwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="-671.51424287856082"/>
+        </scene>
+        <!--Push View Controller-->
+        <scene sceneID="xKf-dD-d5q">
+            <objects>
+                <viewController storyboardIdentifier="YMPushViewController" id="trf-k9-C22" customClass="YMPushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1tp-7p-Qxk"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKU-Jl-63K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JaI-2P-dMf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k22-Xs-PQ4">
+                                <rect key="frame" x="115" y="211" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DisMissButton"/>
+                                <connections>
+                                    <action selector="event_dismiss:" destination="trf-k9-C22" eventType="touchUpInside" id="Tsx-Zb-cbC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eZ-8Y-Ox1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="17"/>
+        </scene>
+        <!--Swipe From View Controller-->
+        <scene sceneID="0Wt-UB-ZdF">
+            <objects>
+                <viewController storyboardIdentifier="YMSwipeFromViewController" id="DRL-qk-lfw" customClass="YMSwipeFromViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cqp-Cj-ZAK"/>
+                        <viewControllerLayoutGuide type="bottom" id="1KK-sG-jXm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4BI-on-qAt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4C-a2-LxE">
+                                <rect key="frame" x="165" y="235" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="点击跳转"/>
+                                <connections>
+                                    <action selector="event_jump:" destination="DRL-qk-lfw" eventType="touchUpInside" id="pSQ-3B-TtW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlL-fW-7fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428" y="13"/>
+        </scene>
+        <!--Swipe To View Controller-->
+        <scene sceneID="BmR-vA-Mw0">
+            <objects>
+                <viewController storyboardIdentifier="YMSwipeToViewController" id="gwf-tx-2Dr" customClass="YMSwipeToViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXJ-JU-MNf"/>
+                        <viewControllerLayoutGuide type="bottom" id="jGv-wv-Ki2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="89H-eb-gL1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGo-1p-oVS">
+                                <rect key="frame" x="172" y="202" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="event_dismiss:" destination="gwf-tx-2Dr" eventType="touchUpInside" id="YXg-gd-0Io"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toT-HK-mq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3290" y="2"/>
+        </scene>
+    </scenes>
+</document>
