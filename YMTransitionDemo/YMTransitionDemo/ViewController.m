@@ -10,6 +10,7 @@
 #import "YMPushViewController.h"
 #import "YMFadeInAnimate.h"
 #import "YMSwipeFromViewController.h"
+#import "YMPopupFromViewController.h"
 
 @interface ViewController () <UIViewControllerTransitioningDelegate>
 
@@ -39,6 +40,13 @@
     YMSwipeFromViewController *vc = [sb instantiateViewControllerWithIdentifier:@"YMSwipeFromViewController"];
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc]  animated:YES completion:nil];
 //    [self.navigationController pushViewController:vc animated:YES];
+}
+/**
+ 弹出
+ */
+- (IBAction)event_popup:(id)sender {
+    YMPopupFromViewController *vc = [YMPopupFromViewController new];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
 }
 #pragma mark - UIViewControllerTransitioningDelegate
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {

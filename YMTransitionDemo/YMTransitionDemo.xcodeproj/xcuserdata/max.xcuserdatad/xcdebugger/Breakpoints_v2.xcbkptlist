@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YMTransitionDemo/SwipeAnimate/YMSwipeAnimation.m"
-            timestampString = "569470109.2878129"
+            timestampString = "569730790.6908489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -80,6 +80,22 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "-event_dismiss:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTransitionDemo/PopupAnimate/YMPopupToViewController.m"
+            timestampString = "569746798.939589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-event_present"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -22,6 +22,10 @@
 		50DED32121F0180E001AAB2E /* YMSwipeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED32021F0180E001AAB2E /* YMSwipeAnimation.m */; };
 		50DED32E21F0353F001AAB2E /* YMSwipeTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED32D21F0353F001AAB2E /* YMSwipeTransitionManager.m */; };
 		50DED33121F05BBB001AAB2E /* YMSwipeInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33021F05BBB001AAB2E /* YMSwipeInteractiveTransition.m */; };
+		50DED33721F567D8001AAB2E /* YMPopupFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33621F567D7001AAB2E /* YMPopupFromViewController.m */; };
+		50DED33A21F56825001AAB2E /* YMPopupToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33921F56825001AAB2E /* YMPopupToViewController.m */; };
+		50DED33C21F56F03001AAB2E /* sccnn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50DED33B21F56F03001AAB2E /* sccnn.jpg */; };
+		50DED33F21F570E5001AAB2E /* YMPopupAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33E21F570E5001AAB2E /* YMPopupAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,13 @@
 		50DED32D21F0353F001AAB2E /* YMSwipeTransitionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMSwipeTransitionManager.m; sourceTree = "<group>"; };
 		50DED32F21F05BBB001AAB2E /* YMSwipeInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMSwipeInteractiveTransition.h; sourceTree = "<group>"; };
 		50DED33021F05BBB001AAB2E /* YMSwipeInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMSwipeInteractiveTransition.m; sourceTree = "<group>"; };
+		50DED33521F567D7001AAB2E /* YMPopupFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPopupFromViewController.h; sourceTree = "<group>"; };
+		50DED33621F567D7001AAB2E /* YMPopupFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPopupFromViewController.m; sourceTree = "<group>"; };
+		50DED33821F56825001AAB2E /* YMPopupToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPopupToViewController.h; sourceTree = "<group>"; };
+		50DED33921F56825001AAB2E /* YMPopupToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPopupToViewController.m; sourceTree = "<group>"; };
+		50DED33B21F56F03001AAB2E /* sccnn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sccnn.jpg; sourceTree = "<group>"; };
+		50DED33D21F570E5001AAB2E /* YMPopupAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPopupAnimation.h; sourceTree = "<group>"; };
+		50DED33E21F570E5001AAB2E /* YMPopupAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPopupAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +141,8 @@
 				50DED31221E88379001AAB2E /* YMPushViewController.m */,
 				50DED31421EF1600001AAB2E /* FadeInAnimate */,
 				50DED31821EF4879001AAB2E /* SwipeAnimate */,
+				50DED33421F567C1001AAB2E /* PopupAnimate */,
+				50DED34021F5A686001AAB2E /* 圆圈扩散 */,
 				50DED2E521E88267001AAB2E /* Main.storyboard */,
 				50DED2EA21E88269001AAB2E /* LaunchScreen.storyboard */,
 				50DED2ED21E88269001AAB2E /* Info.plist */,
@@ -181,6 +194,27 @@
 				50DED33021F05BBB001AAB2E /* YMSwipeInteractiveTransition.m */,
 			);
 			path = SwipeAnimate;
+			sourceTree = "<group>";
+		};
+		50DED33421F567C1001AAB2E /* PopupAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				50DED33B21F56F03001AAB2E /* sccnn.jpg */,
+				50DED33521F567D7001AAB2E /* YMPopupFromViewController.h */,
+				50DED33621F567D7001AAB2E /* YMPopupFromViewController.m */,
+				50DED33821F56825001AAB2E /* YMPopupToViewController.h */,
+				50DED33921F56825001AAB2E /* YMPopupToViewController.m */,
+				50DED33D21F570E5001AAB2E /* YMPopupAnimation.h */,
+				50DED33E21F570E5001AAB2E /* YMPopupAnimation.m */,
+			);
+			path = PopupAnimate;
+			sourceTree = "<group>";
+		};
+		50DED34021F5A686001AAB2E /* 圆圈扩散 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "圆圈扩散";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DED2EC21E88269001AAB2E /* LaunchScreen.storyboard in Resources */,
+				50DED33C21F56F03001AAB2E /* sccnn.jpg in Resources */,
 				50DED2E921E88269001AAB2E /* Assets.xcassets in Resources */,
 				50DED2E721E88267001AAB2E /* Main.storyboard in Resources */,
 			);
@@ -315,11 +350,14 @@
 			files = (
 				50DED33121F05BBB001AAB2E /* YMSwipeInteractiveTransition.m in Sources */,
 				50DED31721EF161F001AAB2E /* YMFadeInAnimate.m in Sources */,
+				50DED33F21F570E5001AAB2E /* YMPopupAnimation.m in Sources */,
+				50DED33721F567D8001AAB2E /* YMPopupFromViewController.m in Sources */,
 				50DED2E421E88267001AAB2E /* ViewController.m in Sources */,
 				50DED2EF21E88269001AAB2E /* main.m in Sources */,
 				50DED32121F0180E001AAB2E /* YMSwipeAnimation.m in Sources */,
 				50DED31E21F017C6001AAB2E /* YMSwipeToViewController.m in Sources */,
 				50DED31321E88379001AAB2E /* YMPushViewController.m in Sources */,
+				50DED33A21F56825001AAB2E /* YMPopupToViewController.m in Sources */,
 				50DED2E121E88267001AAB2E /* AppDelegate.m in Sources */,
 				50DED31B21EF48A3001AAB2E /* YMSwipeFromViewController.m in Sources */,
 				50DED32E21F0353F001AAB2E /* YMSwipeTransitionManager.m in Sources */,

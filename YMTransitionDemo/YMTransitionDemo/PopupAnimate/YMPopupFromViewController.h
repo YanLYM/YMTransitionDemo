@@ -1,16 +1,16 @@
 //
-//  YMSwipeFromViewController.h
+//  YMPopupFromViewController.h
 //  YMTransitionDemo
 //
-//  Created by Max on 2019/1/16.
+//  Created by Max on 2019/1/21.
 //  Copyright © 2019年 Max. All rights reserved.
-//  侧滑转场
+//
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YMSwipeFromViewController : UIViewController
+@interface YMPopupFromViewController : UIViewController
 
 @end
 
