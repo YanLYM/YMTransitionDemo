@@ -42,7 +42,8 @@
     }
 }
 - (IBAction)event_jump:(id)sender {
-    YMSwipeToViewController *vc = [YMSwipeToViewController new];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    YMSwipeToViewController *vc = [sb instantiateViewControllerWithIdentifier:@"YMSwipeToViewController"];
     self.manager.gestureRecognizer = nil;
     self.manager.targetEdge = UIRectEdgeRight;
     vc.transitioningDelegate = self.manager;

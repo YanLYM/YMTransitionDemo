@@ -22,27 +22,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jT1-kL-y4H">
-                                <rect key="frame" x="68" y="108" width="80" height="30"/>
+                                <rect key="frame" x="73" y="120" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PushButton"/>
+                                <state key="normal" title="翻转"/>
                                 <connections>
                                     <action selector="event_push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZ0-ne-Qmq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpX-r8-Y2F">
-                                <rect key="frame" x="68" y="191" width="42" height="30"/>
+                                <rect key="frame" x="74" y="191" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Swipe"/>
+                                <state key="normal" title="侧滑"/>
                                 <connections>
                                     <action selector="event_modal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2v-Lf-mQg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dws-y5-byz">
-                                <rect key="frame" x="68" y="261" width="45" height="30"/>
+                                <rect key="frame" x="60" y="252" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Popup"/>
+                                <state key="normal" title="弹性Pop"/>
                                 <connections>
                                     <action selector="event_popup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Um7-oc-YmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sE-BW-sTk">
+                                <rect key="frame" x="66" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="扩散圆"/>
+                                <connections>
+                                    <action selector="event_circle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFD-ew-txH"/>
                                 </connections>
                             </button>
                         </subviews>

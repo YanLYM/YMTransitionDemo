@@ -11,6 +11,7 @@
 #import "YMFadeInAnimate.h"
 #import "YMSwipeFromViewController.h"
 #import "YMPopupFromViewController.h"
+#import "YMCircleFromViewController.h"
 
 @interface ViewController () <UIViewControllerTransitioningDelegate>
 
@@ -46,6 +47,10 @@
  */
 - (IBAction)event_popup:(id)sender {
     YMPopupFromViewController *vc = [YMPopupFromViewController new];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
+}
+- (IBAction)event_circle:(id)sender {
+    YMCircleFromViewController *vc = [YMCircleFromViewController new];
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
 }
 #pragma mark - UIViewControllerTransitioningDelegate

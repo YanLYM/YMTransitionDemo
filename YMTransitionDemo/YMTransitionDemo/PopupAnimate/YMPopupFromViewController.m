@@ -11,7 +11,7 @@
 #import "YMPopupAnimation.h"
 
 @interface YMPopupFromViewController () <UIViewControllerTransitioningDelegate>
-@property (nonatomic, strong) UIButton *completeBtn;
+@property (nonatomic, strong) UIButton * leftItem;
 @property (nonatomic, strong) UIButton *presentBtn;
 
 @end
@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor purpleColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.leftItem];
     self.title = @"PopupVc";
     [self.view addSubview:self.presentBtn];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"sccnn.jpg"]];
@@ -31,9 +32,15 @@
     [self.view addSubview:imageView];
     
 }
+
+-(void)backClicked{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)event_present {
     YMPopupToViewController *vc = [YMPopupToViewController new];
     vc.transitioningDelegate = self;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:vc animated:YES completion:nil];
 }
 #pragma UIViewControllerTransitioningDelegate
@@ -46,6 +53,18 @@
 }
 
 #pragma mark - Lazyloading
+-(UIButton *)leftItem{
+    
+    if (!_leftItem) {
+        
+        _leftItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        _leftItem.frame = CGRectMake(0, 0,50, 20);
+        [_leftItem setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_leftItem setTitle:@"Back" forState:UIControlStateNormal];
+        [_leftItem addTarget:self action:@selector(backClicked) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _leftItem;
+}
 - (UIButton *)presentBtn {
     if (nil == _presentBtn) {
         _presentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
