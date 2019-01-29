@@ -59,7 +59,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
     }
     cell.textLabel.text = self.dataSource[indexPath.row];
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -84,82 +83,6 @@
         YMCardFromViewController *vc = [YMCardFromViewController new];
         [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
     }
-//    switch (indexPath.row) {
-//        case 0:
-//            {   //渐显
-//                YMFadeFromViewController *vc = [YMFadeFromViewController new];
-//                [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-//            }
-//            break;
-//        case 1:
-//        {       //侧滑
-//            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//            YMSwipeFromViewController *vc = [sb instantiateViewControllerWithIdentifier:@"YMSwipeFromViewController"];
-//            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc]  animated:YES completion:nil];
-//        }
-//            break;
-//        case 2:
-//        {   //弹性pop
-//            YMPopupFromViewController *vc = [YMPopupFromViewController new];
-//            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-//        }
-//            break;
-//        case 3:
-//        {   //圆圈扩散
-//            YMCircleFromViewController *vc = [YMCircleFromViewController new];
-//            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-//        }
-//            break;
-//        case 4:
-//        {
-//            YMCardFromViewController *vc = [YMCardFromViewController new];
-//            [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-//        }
-//            break;
-//        default:
-//            break;
-//    }
 }
-//- (IBAction)event_push:(id)sender {
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    YMPushViewController *vc = [sb instantiateViewControllerWithIdentifier:@"YMPushViewController"];
-//
-////    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//    vc.modalPresentationStyle = UIModalPresentationCustom;
-//    vc.transitioningDelegate = self;
-//    [self.navigationController presentViewController:vc animated:YES completion:nil];
-////    [self.navigationController pushViewController:vc animated:YES];
-//}
-//- (IBAction)event_modal:(id)sender {
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    YMSwipeFromViewController *vc = [sb instantiateViewControllerWithIdentifier:@"YMSwipeFromViewController"];
-//    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc]  animated:YES completion:nil];
-////    [self.navigationController pushViewController:vc animated:YES];
-//}
-///**
-// 弹出
-// */
-//- (IBAction)event_popup:(id)sender {
-//    YMPopupFromViewController *vc = [YMPopupFromViewController new];
-//    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-//}
-//- (IBAction)event_circle:(id)sender {
-//    YMCircleFromViewController *vc = [YMCircleFromViewController new];
-//    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-//}
-#pragma mark - UIViewControllerTransitioningDelegate
-- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    return [YMFadeInAnimate new];
-}
-
-- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return [YMFadeInAnimate new];
-}
-
-//- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator;
-//
-//- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator;
-//
-//- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0);
 
 @end
