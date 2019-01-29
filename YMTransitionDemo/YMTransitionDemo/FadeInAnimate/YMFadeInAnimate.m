@@ -18,8 +18,8 @@
     UIView *contentView = [transitionContext containerView];
     UIViewController *fromVc = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVc = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *fromView = fromVc.view; //[transitionContext viewForKey:UITransitionContextFromViewKey];
+    UIView *toView = toVc.view;//[transitionContext viewForKey:UITransitionContextToViewKey];
     
     fromView.frame = [transitionContext initialFrameForViewController:fromVc];
     toView.frame = [transitionContext finalFrameForViewController:toVc];

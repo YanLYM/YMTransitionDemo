@@ -65,7 +65,8 @@
     
     YMCircleFromViewController * tempViewController = toViewController.viewControllers.lastObject;
     UIView *containerView = [transitionContext containerView];
-    
+    //当modalPresentationStyle = UIModalPresentationCustom 时不用添加fromViewController.view，因为视图不会被移除, 为UIModalPresentationFullScreen 时需要添加，否则背景是黑的
+      [containerView insertSubview:toViewController.view belowSubview:fromViewController.view];
     //画两个圆路径，这里的结束和开始时候的画的圆的道理和present的时候正好是相反的
     CGFloat radius = sqrtf(containerView.frame.size.height * containerView.frame.size.height + containerView.frame.size.width * containerView.frame.size.width) / 2;
     UIBezierPath * startCycle = [UIBezierPath bezierPathWithArcCenter:containerView.center radius:radius startAngle:0 endAngle:M_PI * 2 clockwise:YES];

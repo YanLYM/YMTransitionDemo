@@ -21,7 +21,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.leftItem];
     self.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageView = [UIImageView new];
-    imageView.image = [UIImage imageNamed:@"sccnn.jpg"];
+    imageView.image = [UIImage imageNamed:@"bgImage.jpg"];
     imageView.frame = self.view.bounds;
     [self.view addSubview:imageView];
     [self.view addSubview:self.presentBtn];
@@ -62,7 +62,7 @@
         [_presentBtn setTitle:@"点击\n拖动" forState:UIControlStateNormal];
         [_presentBtn addTarget:self action:@selector(presentBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         
-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(_presentBtnPan:)];
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(gesture_presentBtnPan:)];
         [_presentBtn addGestureRecognizer:pan];
         
     }
@@ -70,7 +70,7 @@
 }
 
 
--(void)_presentBtnPan:(UIPanGestureRecognizer *)recognizer{
+-(void)gesture_presentBtnPan:(UIPanGestureRecognizer *)recognizer{
     CGPoint translation = [recognizer translationInView:self.view];
     CGPoint newCenter   = CGPointMake(recognizer.view.center.x + translation.x,
                                       recognizer.view.center.y + translation.y);
@@ -88,7 +88,7 @@
     
     YMCircleToViewController *  vc =[[YMCircleToViewController alloc]init];
     vc.transitioningDelegate = self;
-    vc.modalPresentationStyle = UIModalPresentationCustom;
+//    vc.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:vc animated:YES completion:nil];
 }
 

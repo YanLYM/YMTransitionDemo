@@ -25,7 +25,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.leftItem];
     self.title = @"PopupVc";
     [self.view addSubview:self.presentBtn];
-    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"sccnn.jpg"]];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgImage.jpg"]];
     imageView.frame = CGRectMake((self.view.frame.size.width-250)/2, CGRectGetMaxY(self.presentBtn.frame)+20, 250, 250);
     imageView.layer.cornerRadius = 10;
     imageView.layer.masksToBounds = YES;

@@ -20,7 +20,7 @@
 }
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator {
-    //有手势 返回手势交互
+    //有手势 返回处理交互协议对象
     if (self.gestureRecognizer) {
         return [[YMSwipeInteractiveTransition alloc] initWithGestureRecognizer:self.gestureRecognizer edgeForDragging:self.targetEdge];
     }

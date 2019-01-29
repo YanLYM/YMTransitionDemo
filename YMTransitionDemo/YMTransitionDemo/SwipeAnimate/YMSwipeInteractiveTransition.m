@@ -48,6 +48,7 @@
 -(void)startInteractiveTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     
     [super startInteractiveTransition:transitionContext];
+    //保存我们的交互上下文，方便做进度更新等操作
     self.transitionContext = transitionContext;
 }
 
@@ -87,27 +88,19 @@
 
 // 计算动画进度
 -(CGFloat)percentForGesture:(UIScreenEdgePanGestureRecognizer *)gesture{
-    
     UIView * transitionContainerView = self.transitionContext.containerView;
-    
     // 手势滑动 在transitionContainerView中 的位置
     // 这个位置判断的方法可以具体根据你的需求确定
     CGPoint locationInSourceView = [gesture locationInView:transitionContainerView];
-    
     CGFloat width  = CGRectGetWidth(transitionContainerView.bounds);
     CGFloat height = CGRectGetHeight(transitionContainerView.bounds);
-    
     if (self.edge == UIRectEdgeRight)
-        
         return (width - locationInSourceView.x) / width;
     else if (self.edge == UIRectEdgeLeft)
-        
         return locationInSourceView.x / width;
     else if (self.edge == UIRectEdgeBottom)
-        
         return (height - locationInSourceView.y) / height;
     else if (self.edge == UIRectEdgeTop)
-        
         return locationInSourceView.y / height;
     else
         return 0.f;

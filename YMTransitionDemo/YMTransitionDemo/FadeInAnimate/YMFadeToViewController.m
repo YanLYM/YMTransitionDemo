@@ -1,30 +1,28 @@
 //
-//  YMPopupToViewController.m
+//  YMFadeToViewController.m
 //  YMTransitionDemo
 //
-//  Created by Max on 2019/1/21.
+//  Created by Max on 2019/1/24.
 //  Copyright © 2019年 Max. All rights reserved.
 //
 
-#import "YMPopupToViewController.h"
+#import "YMFadeToViewController.h"
 
-@interface YMPopupToViewController ()
+@interface YMFadeToViewController ()
 @property (nonatomic, strong) UIButton *dismissBtn;
 @end
 
-@implementation YMPopupToViewController
+@implementation YMFadeToViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor blueColor];
     [self.view addSubview:self.dismissBtn];
 }
 - (void)event_dismiss {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-#pragma mark - Lazyloading
 - (UIButton *)dismissBtn {
     if (nil == _dismissBtn) {
         _dismissBtn = [UIButton buttonWithType:UIButtonTypeSystem];

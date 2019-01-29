@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5055096521F9582E0042A8B9 /* YMFadeFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055096421F9582E0042A8B9 /* YMFadeFromViewController.m */; };
+		5055096821F9583C0042A8B9 /* YMFadeToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055096721F9583C0042A8B9 /* YMFadeToViewController.m */; };
+		5055096C21F9B1B60042A8B9 /* YMCardFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055096B21F9B1B60042A8B9 /* YMCardFromViewController.m */; };
+		5055096F21F9B1C00042A8B9 /* YMCardToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055096E21F9B1C00042A8B9 /* YMCardToViewController.m */; };
+		5055097221F9B93E0042A8B9 /* YMCardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055097121F9B93E0042A8B9 /* YMCardPresentationController.m */; };
+		5055097522003BB10042A8B9 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5055097422003BB10042A8B9 /* bgImage.jpg */; };
 		50DED2E121E88267001AAB2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED2E021E88267001AAB2E /* AppDelegate.m */; };
 		50DED2E421E88267001AAB2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED2E321E88267001AAB2E /* ViewController.m */; };
 		50DED2E721E88267001AAB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DED2E521E88267001AAB2E /* Main.storyboard */; };
@@ -24,7 +30,6 @@
 		50DED33121F05BBB001AAB2E /* YMSwipeInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33021F05BBB001AAB2E /* YMSwipeInteractiveTransition.m */; };
 		50DED33721F567D8001AAB2E /* YMPopupFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33621F567D7001AAB2E /* YMPopupFromViewController.m */; };
 		50DED33A21F56825001AAB2E /* YMPopupToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33921F56825001AAB2E /* YMPopupToViewController.m */; };
-		50DED33C21F56F03001AAB2E /* sccnn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50DED33B21F56F03001AAB2E /* sccnn.jpg */; };
 		50DED33F21F570E5001AAB2E /* YMPopupAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED33E21F570E5001AAB2E /* YMPopupAnimation.m */; };
 		50DED34321F5A8A1001AAB2E /* YMCircleFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED34221F5A8A1001AAB2E /* YMCircleFromViewController.m */; };
 		50DED34621F5A8BD001AAB2E /* YMCircleToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED34521F5A8BD001AAB2E /* YMCircleToViewController.m */; };
@@ -49,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5055096321F9582E0042A8B9 /* YMFadeFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMFadeFromViewController.h; sourceTree = "<group>"; };
+		5055096421F9582E0042A8B9 /* YMFadeFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMFadeFromViewController.m; sourceTree = "<group>"; };
+		5055096621F9583C0042A8B9 /* YMFadeToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMFadeToViewController.h; sourceTree = "<group>"; };
+		5055096721F9583C0042A8B9 /* YMFadeToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMFadeToViewController.m; sourceTree = "<group>"; };
+		5055096A21F9B1B60042A8B9 /* YMCardFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCardFromViewController.h; sourceTree = "<group>"; };
+		5055096B21F9B1B60042A8B9 /* YMCardFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCardFromViewController.m; sourceTree = "<group>"; };
+		5055096D21F9B1C00042A8B9 /* YMCardToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCardToViewController.h; sourceTree = "<group>"; };
+		5055096E21F9B1C00042A8B9 /* YMCardToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCardToViewController.m; sourceTree = "<group>"; };
+		5055097021F9B93E0042A8B9 /* YMCardPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCardPresentationController.h; sourceTree = "<group>"; };
+		5055097121F9B93E0042A8B9 /* YMCardPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCardPresentationController.m; sourceTree = "<group>"; };
+		5055097422003BB10042A8B9 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgImage.jpg; sourceTree = "<group>"; };
 		50DED2DC21E88267001AAB2E /* YMTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DED2DF21E88267001AAB2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50DED2E021E88267001AAB2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,7 +99,6 @@
 		50DED33621F567D7001AAB2E /* YMPopupFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPopupFromViewController.m; sourceTree = "<group>"; };
 		50DED33821F56825001AAB2E /* YMPopupToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPopupToViewController.h; sourceTree = "<group>"; };
 		50DED33921F56825001AAB2E /* YMPopupToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPopupToViewController.m; sourceTree = "<group>"; };
-		50DED33B21F56F03001AAB2E /* sccnn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sccnn.jpg; sourceTree = "<group>"; };
 		50DED33D21F570E5001AAB2E /* YMPopupAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPopupAnimation.h; sourceTree = "<group>"; };
 		50DED33E21F570E5001AAB2E /* YMPopupAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPopupAnimation.m; sourceTree = "<group>"; };
 		50DED34121F5A8A1001AAB2E /* YMCircleFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCircleFromViewController.h; sourceTree = "<group>"; };
@@ -119,6 +134,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5055096921F9B1160042A8B9 /* BottomCardAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				5055096A21F9B1B60042A8B9 /* YMCardFromViewController.h */,
+				5055096B21F9B1B60042A8B9 /* YMCardFromViewController.m */,
+				5055096D21F9B1C00042A8B9 /* YMCardToViewController.h */,
+				5055096E21F9B1C00042A8B9 /* YMCardToViewController.m */,
+				5055097021F9B93E0042A8B9 /* YMCardPresentationController.h */,
+				5055097121F9B93E0042A8B9 /* YMCardPresentationController.m */,
+			);
+			path = BottomCardAnimate;
+			sourceTree = "<group>";
+		};
 		50DED2D321E88267001AAB2E = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +180,8 @@
 				50DED31821EF4879001AAB2E /* SwipeAnimate */,
 				50DED33421F567C1001AAB2E /* PopupAnimate */,
 				50DED34021F5A686001AAB2E /* 圆圈扩散 */,
+				5055096921F9B1160042A8B9 /* BottomCardAnimate */,
+				5055097422003BB10042A8B9 /* bgImage.jpg */,
 				50DED2E521E88267001AAB2E /* Main.storyboard */,
 				50DED2EA21E88269001AAB2E /* LaunchScreen.storyboard */,
 				50DED2ED21E88269001AAB2E /* Info.plist */,
@@ -184,6 +214,10 @@
 			children = (
 				50DED31521EF161F001AAB2E /* YMFadeInAnimate.h */,
 				50DED31621EF161F001AAB2E /* YMFadeInAnimate.m */,
+				5055096321F9582E0042A8B9 /* YMFadeFromViewController.h */,
+				5055096421F9582E0042A8B9 /* YMFadeFromViewController.m */,
+				5055096621F9583C0042A8B9 /* YMFadeToViewController.h */,
+				5055096721F9583C0042A8B9 /* YMFadeToViewController.m */,
 			);
 			path = FadeInAnimate;
 			sourceTree = "<group>";
@@ -208,7 +242,6 @@
 		50DED33421F567C1001AAB2E /* PopupAnimate */ = {
 			isa = PBXGroup;
 			children = (
-				50DED33B21F56F03001AAB2E /* sccnn.jpg */,
 				50DED33521F567D7001AAB2E /* YMPopupFromViewController.h */,
 				50DED33621F567D7001AAB2E /* YMPopupFromViewController.m */,
 				50DED33821F56825001AAB2E /* YMPopupToViewController.h */,
@@ -336,7 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DED2EC21E88269001AAB2E /* LaunchScreen.storyboard in Resources */,
-				50DED33C21F56F03001AAB2E /* sccnn.jpg in Resources */,
+				5055097522003BB10042A8B9 /* bgImage.jpg in Resources */,
 				50DED2E921E88269001AAB2E /* Assets.xcassets in Resources */,
 				50DED2E721E88267001AAB2E /* Main.storyboard in Resources */,
 			);
@@ -363,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5055096521F9582E0042A8B9 /* YMFadeFromViewController.m in Sources */,
+				5055096F21F9B1C00042A8B9 /* YMCardToViewController.m in Sources */,
 				50DED33121F05BBB001AAB2E /* YMSwipeInteractiveTransition.m in Sources */,
 				50DED31721EF161F001AAB2E /* YMFadeInAnimate.m in Sources */,
 				50DED33F21F570E5001AAB2E /* YMPopupAnimation.m in Sources */,
@@ -373,11 +408,14 @@
 				50DED34321F5A8A1001AAB2E /* YMCircleFromViewController.m in Sources */,
 				50DED34621F5A8BD001AAB2E /* YMCircleToViewController.m in Sources */,
 				50DED32121F0180E001AAB2E /* YMSwipeAnimation.m in Sources */,
+				5055096821F9583C0042A8B9 /* YMFadeToViewController.m in Sources */,
+				5055096C21F9B1B60042A8B9 /* YMCardFromViewController.m in Sources */,
 				50DED31E21F017C6001AAB2E /* YMSwipeToViewController.m in Sources */,
 				50DED31321E88379001AAB2E /* YMPushViewController.m in Sources */,
 				50DED33A21F56825001AAB2E /* YMPopupToViewController.m in Sources */,
 				50DED2E121E88267001AAB2E /* AppDelegate.m in Sources */,
 				50DED31B21EF48A3001AAB2E /* YMSwipeFromViewController.m in Sources */,
+				5055097221F9B93E0042A8B9 /* YMCardPresentationController.m in Sources */,
 				50DED32E21F0353F001AAB2E /* YMSwipeTransitionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

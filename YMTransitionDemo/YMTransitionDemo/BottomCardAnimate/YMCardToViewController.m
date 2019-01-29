@@ -1,25 +1,30 @@
 //
-//  YMPopupToViewController.m
+//  YMCardToViewController.m
 //  YMTransitionDemo
 //
-//  Created by Max on 2019/1/21.
+//  Created by Max on 2019/1/24.
 //  Copyright © 2019年 Max. All rights reserved.
 //
 
-#import "YMPopupToViewController.h"
+#import "YMCardToViewController.h"
 
-@interface YMPopupToViewController ()
+@interface YMCardToViewController ()
 @property (nonatomic, strong) UIButton *dismissBtn;
 @end
 
-@implementation YMPopupToViewController
+@implementation YMCardToViewController
 
+- (void)loadView {
+    [super loadView];
+    self.preferredContentSize = CGSizeMake(self.view.bounds.size.width, 420);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
+    self.view.layer.cornerRadius = 16;
     [self.view addSubview:self.dismissBtn];
 }
+
 - (void)event_dismiss {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -31,7 +36,7 @@
         [_dismissBtn setTitle:@"Dismiss" forState:UIControlStateNormal];
         [_dismissBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_dismissBtn addTarget:self action:@selector(event_dismiss) forControlEvents:UIControlEventTouchUpInside];
-        _dismissBtn.frame = CGRectMake(100, 150, 80, 50);
+        _dismissBtn.frame = CGRectMake(100, 100, 80, 50);
     }
     return _dismissBtn;
 }
