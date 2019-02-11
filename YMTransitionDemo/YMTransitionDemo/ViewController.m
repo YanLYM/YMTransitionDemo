@@ -14,6 +14,7 @@
 #import "YMCircleFromViewController.h"
 #import "YMFadeFromViewController.h"
 #import "YMCardFromViewController.h"
+#import "YMOpenViewController.h"
 
 @interface ViewController () <UIViewControllerTransitioningDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -25,9 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    self.title = @"首页";
+    self.title = @"转场动画";
     self.view.backgroundColor = [UIColor yellowColor];
-    self.dataSource = @[@"渐显",@"侧滑",@"弹性Pop",@"扩散圆",@"底部卡片"];
+    self.dataSource = @[@"渐显",@"侧滑",@"弹性Pop",@"扩散圆",@"底部卡片",@"开门"];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
@@ -82,6 +83,10 @@
     } else if (indexPath.row == 4) {
         YMCardFromViewController *vc = [YMCardFromViewController new];
         [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
+    } else if (indexPath.row == 5) {
+        YMOpenViewController *vc = [YMOpenViewController new];
+        self.navigationController.delegate = vc;
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

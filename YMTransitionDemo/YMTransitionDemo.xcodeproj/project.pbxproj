@@ -13,6 +13,8 @@
 		5055096F21F9B1C00042A8B9 /* YMCardToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055096E21F9B1C00042A8B9 /* YMCardToViewController.m */; };
 		5055097221F9B93E0042A8B9 /* YMCardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055097121F9B93E0042A8B9 /* YMCardPresentationController.m */; };
 		5055097522003BB10042A8B9 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5055097422003BB10042A8B9 /* bgImage.jpg */; };
+		50652A2722017519001926E2 /* YMOpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50652A2622017519001926E2 /* YMOpenViewController.m */; };
+		50652A2A2201806B001926E2 /* YMOpenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50652A292201806B001926E2 /* YMOpenAnimation.m */; };
 		50DED2E121E88267001AAB2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED2E021E88267001AAB2E /* AppDelegate.m */; };
 		50DED2E421E88267001AAB2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DED2E321E88267001AAB2E /* ViewController.m */; };
 		50DED2E721E88267001AAB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DED2E521E88267001AAB2E /* Main.storyboard */; };
@@ -65,6 +67,10 @@
 		5055097021F9B93E0042A8B9 /* YMCardPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCardPresentationController.h; sourceTree = "<group>"; };
 		5055097121F9B93E0042A8B9 /* YMCardPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCardPresentationController.m; sourceTree = "<group>"; };
 		5055097422003BB10042A8B9 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgImage.jpg; sourceTree = "<group>"; };
+		50652A2522017519001926E2 /* YMOpenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMOpenViewController.h; sourceTree = "<group>"; };
+		50652A2622017519001926E2 /* YMOpenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMOpenViewController.m; sourceTree = "<group>"; };
+		50652A282201806B001926E2 /* YMOpenAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMOpenAnimation.h; sourceTree = "<group>"; };
+		50652A292201806B001926E2 /* YMOpenAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMOpenAnimation.m; sourceTree = "<group>"; };
 		50DED2DC21E88267001AAB2E /* YMTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DED2DF21E88267001AAB2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50DED2E021E88267001AAB2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +153,17 @@
 			path = BottomCardAnimate;
 			sourceTree = "<group>";
 		};
+		50652A24220174DF001926E2 /* Push开门动画 */ = {
+			isa = PBXGroup;
+			children = (
+				50652A2522017519001926E2 /* YMOpenViewController.h */,
+				50652A2622017519001926E2 /* YMOpenViewController.m */,
+				50652A282201806B001926E2 /* YMOpenAnimation.h */,
+				50652A292201806B001926E2 /* YMOpenAnimation.m */,
+			);
+			path = "Push开门动画";
+			sourceTree = "<group>";
+		};
 		50DED2D321E88267001AAB2E = {
 			isa = PBXGroup;
 			children = (
@@ -179,8 +196,9 @@
 				50DED31421EF1600001AAB2E /* FadeInAnimate */,
 				50DED31821EF4879001AAB2E /* SwipeAnimate */,
 				50DED33421F567C1001AAB2E /* PopupAnimate */,
-				50DED34021F5A686001AAB2E /* 圆圈扩散 */,
+				50DED34021F5A686001AAB2E /* 扩散圆 */,
 				5055096921F9B1160042A8B9 /* BottomCardAnimate */,
+				50652A24220174DF001926E2 /* Push开门动画 */,
 				5055097422003BB10042A8B9 /* bgImage.jpg */,
 				50DED2E521E88267001AAB2E /* Main.storyboard */,
 				50DED2EA21E88269001AAB2E /* LaunchScreen.storyboard */,
@@ -252,7 +270,7 @@
 			path = PopupAnimate;
 			sourceTree = "<group>";
 		};
-		50DED34021F5A686001AAB2E /* 圆圈扩散 */ = {
+		50DED34021F5A686001AAB2E /* 扩散圆 */ = {
 			isa = PBXGroup;
 			children = (
 				50DED34121F5A8A1001AAB2E /* YMCircleFromViewController.h */,
@@ -262,7 +280,7 @@
 				50DED34721F5CB7D001AAB2E /* YMCircleAnimation.h */,
 				50DED34821F5CB7D001AAB2E /* YMCircleAnimation.m */,
 			);
-			path = "圆圈扩散";
+			path = "扩散圆";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +425,7 @@
 				50DED34921F5CB7D001AAB2E /* YMCircleAnimation.m in Sources */,
 				50DED34321F5A8A1001AAB2E /* YMCircleFromViewController.m in Sources */,
 				50DED34621F5A8BD001AAB2E /* YMCircleToViewController.m in Sources */,
+				50652A2A2201806B001926E2 /* YMOpenAnimation.m in Sources */,
 				50DED32121F0180E001AAB2E /* YMSwipeAnimation.m in Sources */,
 				5055096821F9583C0042A8B9 /* YMFadeToViewController.m in Sources */,
 				5055096C21F9B1B60042A8B9 /* YMCardFromViewController.m in Sources */,
@@ -416,6 +435,7 @@
 				50DED2E121E88267001AAB2E /* AppDelegate.m in Sources */,
 				50DED31B21EF48A3001AAB2E /* YMSwipeFromViewController.m in Sources */,
 				5055097221F9B93E0042A8B9 /* YMCardPresentationController.m in Sources */,
+				50652A2722017519001926E2 /* YMOpenViewController.m in Sources */,
 				50DED32E21F0353F001AAB2E /* YMSwipeTransitionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
