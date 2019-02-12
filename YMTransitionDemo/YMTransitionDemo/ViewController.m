@@ -28,7 +28,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"转场动画";
     self.view.backgroundColor = [UIColor yellowColor];
-    self.dataSource = @[@"渐显",@"侧滑",@"弹性Pop",@"扩散圆",@"底部卡片",@"开门"];
+    self.dataSource = @[@"渐显",@"侧滑",@"弹性Pop",@"扩散圆",@"底部卡片",@"Pop/Push开门动画"];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;

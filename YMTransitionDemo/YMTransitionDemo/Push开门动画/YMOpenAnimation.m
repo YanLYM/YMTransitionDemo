@@ -101,39 +101,5 @@
                          toView.hidden = NO;
                          
                      }];
-    
-//    UIView *containerView = [transitionContext containerView];
-//    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
-//    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
-//
-//    // 使用系统自带的snapshotViewAfterScreenUpdates:方法，参数为YES，代表视图的属性改变渲染完毕后截屏，参数为NO代表立刻将当前状态的视图截图
-//    UIView *leftToView = [toView snapshotViewAfterScreenUpdates:YES];
-//    leftToView.frame = fromView.frame;
-//    UIView *rightToView = [toView snapshotViewAfterScreenUpdates:YES];
-//    rightToView.frame = CGRectMake(-fromView.frame.size.width/2, 0, fromView.frame.size.width, fromView.frame.size.height);
-//
-//    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(-toView.frame.size.width/2, 0, toView.frame.size.width/2, toView.frame.size.height)];
-//    leftView.clipsToBounds = YES;
-//    UIView *rightView = [[UIView alloc] initWithFrame:CGRectMake(toView.frame.size.width, 0, toView.frame.size.width/2, toView.frame.size.height)];
-//    rightView.clipsToBounds = YES;
-//    [leftView addSubview:leftToView];
-//    [rightView addSubview:rightToView];
-//    [containerView addSubview:toView];
-//    toView.hidden = YES;
-//    [containerView addSubview:leftView];
-//    [containerView addSubview:rightView];
-//    NSTimeInterval interval = [self transitionDuration:transitionContext];
-//    [UIView animateWithDuration:interval animations:^{
-//        leftView.frame = CGRectMake(0, 0, toView.frame.size.width/2, toView.frame.size.height);
-//        rightView.frame = CGRectMake(toView.frame.size.width/2, 0, toView.frame.size.width/2, toView.frame.size.height);
-//    } completion:^(BOOL finished) {
-//        BOOL cancel = [transitionContext transitionWasCancelled];
-//        [transitionContext completeTransition:!cancel];
-//        if (!cancel) {
-//            [leftView removeFromSuperview];
-//            [rightView removeFromSuperview];
-//            toView.hidden = NO;
-//        }
-//    }];
 }
 @end
